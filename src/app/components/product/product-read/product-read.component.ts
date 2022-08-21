@@ -8,7 +8,8 @@ import { ProductService } from "../product.service";
   styleUrls: ["./product-read.component.css"],
 })
 export class ProductReadComponent implements OnInit {
-  products!: Product[];
+  products: Product[] = [];
+  displayedColumns: string[] = ["id", "name", "price"];
 
   constructor(private productService: ProductService) {}
 
