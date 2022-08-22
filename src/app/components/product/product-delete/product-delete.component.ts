@@ -31,7 +31,7 @@ export class ProductDeleteComponent implements OnInit {
         this.router.navigate(["/products"]);
       });
     } else {
-      this.productService.showMessage("Erro ao excluir produto!");
+      this.productService.showMessage("Erro ao excluir produto!", true);
     }
   }
 
